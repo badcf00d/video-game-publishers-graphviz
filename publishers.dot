@@ -1,0 +1,613 @@
+digraph {
+    /* Labels */
+    label=<
+    <FONT POINT-SIZE="64">The Video Game Publisher Graph</FONT><BR ALIGN="RIGHT"/>
+    <FONT POINT-SIZE="26">Generated on {GENERATE_TEXT}</FONT><BR ALIGN="RIGHT"/>
+    <FONT POINT-SIZE="26">Hosted at github.com/badcf00d</FONT><BR ALIGN="RIGHT"/><BR ALIGN="RIGHT"/>
+    <FONT POINT-SIZE="12">Disclaimer: Trademarks are used under fair use for informational and editorial purposes, this work is not affiliated with any of the entities featured within it.</FONT><BR ALIGN="RIGHT"/>
+    >
+    node [label=""]
+
+    /* Layout options */
+    layout=twopi
+    ratio=1.0
+    size=5000
+    overlap=prism
+    overlap_scaling=-8
+    esep="+6"
+    sep="+6.5"
+    pad=1
+
+    /* Style options */
+    fontname="Fira Sans UltraLight"
+    splines=polyline
+    bgcolor=lightgray
+    imagepath="images"
+    truecolor=true
+    labeljust="r"
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+
+    subgraph cluster_sony {
+        "Playstation Studios" [image="playstation_studios.png"]
+        "Bungie" [image="bungie.png"]
+
+        "Playstation Studios" -> {
+            "Polyphony Digital" [image="polyphony_digital.png"]
+            "Insomniac Games" [image="insomniac_games.png"]
+            "Naughty Dog" [image="naughty_dog.png"]
+            "Bend Studio" [image="bend_studio.png"]
+            "Sucker Punch Productions" [image="sucker_punch.png"]
+            "Pixelopus" [image="pixelopus.png"]
+            "Bluepoint Games" [image="bluepoint_games.png"]
+            "Valkyrie Entertainment" [image="valkyrie_entertainment.png"]
+            "Guerrilla Games" [image="guerrilla_games.png"]
+            "Media Molecule" [image="media_molecule.png"]
+            "Housemarque" [image="housemarque.png"]
+            "Firesprite" [image="firesprite.png"]
+            "Nixxes Software" [image="nixxes.png"]
+            "XDev" [image="xdev.png"]
+            "Team Asobi" [image="team_asobi.png"]
+            "San Diego Studio" [image="san_diego_studio.png"]
+            "Santa Monica Studio" [image="santa_monica_studio.png"]
+            "London Studio" [image="london_studio.png"]
+        }
+        "Playstation Studios" -> "Bungie" [label="Pending Approval", style=dotted]
+
+        "Firesprite" -> {
+            "Fabrik Games" [image="fabrik_games.png"]
+        }
+    }
+
+    subgraph cluster_tencent {
+        "Tencent Games" [image="tencent_games.png"]
+        "Grinding Gear Games" [image="grinding_gear.png"]
+        "Space Ape Games" [image="space_ape.png"]
+        "Supercell" [image="supercell.png"]
+        "Certain Affinity" [image="certain_affinity.png"]
+
+        "Tencent Games" -> {
+            "Funcom" [image="funcom.png"]
+            "Leyou" [image="leyou.png"]
+            "Riot Games" [image="riot_games.png"]
+            "Sharkmob" [image="sharkmob.png"]
+            "Turtle Rock Studios" [image="turtle_rock.png"]
+            "Wake Up Interactive" [image="wakeup.png"]
+            "Sumo Group" [image="sumo_group.png"]
+            "Fatshark" [image="fatshark.png"]
+            "Miniclip" [image="miniclip.png"]
+            "Klei Entertainment" [image="klei.png"]
+            "10 Chambers Collective" [image="10chambers.png"]
+            "Yager Development" [image="yager.png"]
+            "Aurora Studio Group" [image="aurora_studios.png"]
+            "TiMi Studio Group" [image="timi_studios.png"]
+            "Lightspeed & Quantum Studio Group" [image="lightspeed_and_quantum.png"]
+            "Morefun Studio Group" [image="morefun_studio.png"]
+            "NExT Studios" [image="next_studios.png"]
+            "Stunlock Studios" [image="stunlock_studios.png"]
+            "Inflexoin Games" [image="inflexion_games.png"]
+            "1C Entertainment" [image="1c_entertainment.png"]
+        }
+
+        "Leyou" -> {
+            "Athlon Games" [image="athlon_games.png"]
+            "Digital Extremes" [image="digital_extremes.png"]
+            "Kingmaker" [image="kingmaker.png"]
+            "Radiance Games" [image="radiance.png"]
+            "Splash Damage" [image="splash_damage.png"]
+        }
+
+
+        "Wake Up Interactive" -> {
+            "Soleil" [image="soleil.png"]
+            "Valhalla Game Studios" [image="valhalla.png"]
+        }
+
+        "Sumo Group" -> {
+            "Sumo Digital" [image="sumo_digital.png"]
+            "Pipeworks Studios" [image="pipeworks.png"]
+            "Atomhawk" [image="atomhawk.png"]
+            "Secret Mode" [image="secret_mode.png"]
+            "Auroch Digital" [image="auroch_digital.png"]
+        }
+
+        "Sumo Digital" -> {
+            "Lab42" [image="lab42.png"]
+            "PixelAnt Games" [image="pixelant.png"]
+            "Red Kite Games" [image="red_kite.png"]
+            "Sumo Pune" [image="sumo_pune.png"]
+            "The Chinese Room" [image="chinese_room.png"]
+        }
+
+        "Riot Games" -> {
+            "Radiant Entertainment" [image="radiant_entertainment.png"]
+            "Hypixel Studios" [image="hypixel_studios.png"]
+        }
+
+        "Pipeworks Studios" -> {
+            "Timbre Games" [image="timbre_games.png"]
+        }
+
+        "1C Entertainment" -> {
+            "Qloc" [image="qloc.png"]
+            "1C Online Games" [image="1c_online_games.png"]
+            "1C SDP" [image="1c_sdp.png"]
+        }
+
+        "Tencent Games" -> "Supercell" [label="84%", style=dotted]
+        "Tencent Games" -> "Grinding Gear Games" [label="80%", style=dotted]
+        "Tencent Games" -> "Epic Games" [label="40%", style=dotted]
+        "Supercell" -> "Space Ape Games" [label="62%", style=dotted]
+        "Leyou" -> "Certain Affinity" [label="20%", style=dotted]
+    }
+
+    subgraph cluster_nintendo {
+        "Nintendo" [image="nintendo.png"]
+
+        "Nintendo" -> {
+            "Nintendo Software Technology" [image="nintendo_software_technology.png"]
+            "The Pokémon Company" [image="pokemon_company.png"]
+            "Retro Studios" [image="retro_studios.png"]
+            "Next Level Games" [image="next_level_games.png"]
+            "NDcube" [image="nd_cube.png"]
+            "1-UP Studio" [image="1up_studio.png"]
+            "Monolith Soft" [image="monolith_soft.png"]
+            "Mario Club Co., Ltd." [image="mario_club.png"]
+            "SRD Co. Ltd." [image="src_co.png"]
+        }
+    }
+
+    subgraph cluster_microsoft {
+        "Microsoft" [image="microsoft.png"]
+        "Activision-Blizzard" [image="actiblizz.png"]
+
+        "Microsoft" -> {
+            "Xbox Game Studios" [image="xbox_game_studios.png"]
+            "Zenimax Media" [image="zenimax_media.png"]
+        }
+        "Microsoft" -> "Activision-Blizzard" [label="Pending Approval", style=dotted]
+
+        "Xbox Game Studios" -> {
+            "343 Industries" [image="343_industries.png"]
+            "The Coalition" [image="the_coalition.png"]
+            "Compulsion Games" [image="compulsion_games.png"]
+            "Double Fine Productions" [image="double_fine.png"]
+            "The Initiative" [image="the_initiative.png"]
+            "inXile Entertainment" [image="inxile_entertainment.png"]
+            "Mojang Studios" [image="mojang_studios.png"]
+            "Ninja Theory" [image="ninja_theory.png"]
+            "Obsidian Entertainment" [image="obsidian_entertainment.png"]
+            "Playground Games" [image="playground_games.png"]
+            "Rare" [image="rare.png"]
+            "Turn 10 Studios" [image="turn_10_studios.png"]
+            "Undead Labs" [image="undead_labs.png"]
+            "World's Edge" [image="worlds_edge.png"]
+        }
+
+        "Zenimax Media" -> {
+            "Alpha Dog Games" [image="alpha_dog_games.png"]
+            "Arkane Studios" [image="arkane_studios.png"]
+            "Bethesda Game Studios" [image="bethesda_game_studios.png"]
+            "id Software" [image="id_software.png"]
+            "MachineGames" [image="machine_games.png"]
+            "Roundhouse Studios" [image="roundhouse_studios.png"]
+            "Tango Gameworks" [image="tango_gameworks.png"]
+            "ZeniMax Online Studios" [image="zenimax_online.png"]
+        }
+
+        "Arkane Studios" -> {
+            "Arkane Austin" [image="arkane_austin.png"]
+        }
+
+        "Activision-Blizzard" -> {
+            "Activision Publishing" [image="activision.png"]
+            "Blizzard Entertainment" [image="blizzard_entertainment.png"]
+            "King.com" [image="king.png"]
+        }
+
+        "Activision Publishing" -> {
+            "Beenox" [image="beenox.png"]
+            "Demonware" [image="demonware.png"]
+            "Digital Legends Entertainment" [image="digital_legends.png"]
+            "High Moon Studios" [image="high_moon_studios.png"]
+            "Infinity Ward" [image="infinity_ward.png"]
+            "Radical Entertainment" [image="radical_entertainment.png"]
+            "Raven Software" [image="raven_software.png"]
+            "Sledgehammer Games" [image="sledgehammer_games.png"]
+            "Solid State Studios" [image="solid_state_studios.png"]
+            "Toys for Bob" [image="toys_for_bob.png"]
+            "Treyarch" [image="treyarch.png"]
+        }
+    }
+
+    subgraph cluster_ea {
+        "Electronic Arts" [image="ea.png"]
+
+        "Electronic Arts" -> {
+            "BioWare" [image="bioware.png"]
+            "Codemasters" [image="codemasters.png"]
+            "Criterion Games" [image="criterion_games.png"]
+            "DICE" [image="dice_stockholm.png"]
+            "Frostbite Labs" [image="frostbite_labs.png"]
+            "EA Mobile" [image="ea_mobile.png"]
+            "EA Sports" [image="ea_sports.png"]
+            "EA Chillingo" [image="ea_chillingo.png"]
+            "EA Create" [image="ea_create.png"]
+            "EA Galway" [image="ea_galway.png"]
+            "EA Baton Rouge" [image="ea_baton_rouge.png"]
+            "EA Gothenburg" [image="ea_gothenburg.png"]
+            "EA Korea Studios" [image="ea_korea_studios.png"]
+            "Full Circle" [image="fullcircle.png"]
+            "Maxis" [image="maxis.png"]
+            "Motive Studios" [image="motive_studios.png"]
+            "Pogo Studios" [image="pogo_studios.png"]
+            "PopCap Games" [image="popcap.png"]
+            "Respawn Entertainment" [image="respawn_entertainment.png"]
+            "Ripple Effect Studio" [image="ripple_effect_studios.png"]
+        }
+
+        "Codemasters" -> {
+            "Slightly Mad Studios"  [image="slightly_mad.png"]
+        }
+
+        "EA Mobile" -> {
+            "EA Capital Games" [image="ea_capital_games.png"]
+            "EA Redwood Studios" [image="ea_redwood_studios.png"]
+            "Firemonkeys Studios" [image="firemonkeys_studio.png"]
+            "Glu Mobile" [image="glu_mobile.png"]
+            "Industrial Toys" [image="industrial_toys.png"]
+            "Playdemic" [image="playdemic.png"]
+            "Red Crow Studios" [image="red_crow_studios.png"]
+            "Slingshot Games" [image="slingshot_games.png"]
+            "Tracktwenty Studios" [image="track_twenty_studios.png"]
+        }
+
+        "EA Sports" -> {
+            "EA Romania" [image="ea_romania.png"]
+            "EA Tiburon" [image="ea_tiburon.png"]
+            "EA Vancouver" [image="ea_vancouver.png"]
+            "Metalhead Software" [image="metalhead_software.png"]
+        }
+
+        "Glu Mobile" -> {
+            "PlayFirst" [image="playfirst.png"]
+        }
+    }
+
+    subgraph cluster_take_two {
+        "Take-Two Interactive" [image="take_two_interactive.png"]
+
+        "Take-Two Interactive" -> {
+            "2K" [image="2k.png"]
+            "Dynamixyz" [image="dynamixyz.png"]
+            "Ghost Story Games" [image="ghost_story.png"]
+            "Private Division" [image="private_division.png"]
+            "Rockstar Games" [image="rockstar_games.png"]
+            "Zynga" [image="zynga.png"]
+        }
+
+        "2K" -> {
+            "2K Chengdu" [image="2k_chengdu.png"]
+            "2K Madrid" [image="2k_madrid.png"]
+            "2K Vegas" [image="2k_vegas.png"]
+            "31st Union" [image="31st_union.png"]
+            "Cat Daddy Games" [image="cat_daddy_games.png"]
+            "Cloud Chamber" [image="cloud_chamber.png"]
+            "Firaxis Games" [image="firaxis_games.png"]
+            "Hangar 13" [image="hangar_13.png"]
+            "HB Studios" [image="hb_studios.png"]
+            "Visual Concepts" [image="visual_concepts.png"]
+        }
+
+        "Private Division" -> {
+            "Intercept Games" [image="intercept_games.png"]
+            "Roll7" [image="roll7.png"]
+        }
+
+        "Rockstar Games" -> {
+            "Rockstar Dundee" [image="rockstar_dundee.png"]
+            "Rockstar India" [image="rockstar_india.png"]
+            "Rockstar Leeds" [image="rockstar_leeds.png"]
+            "Rockstar Lincoln" [image="rockstar_lincoln.png"]
+            "Rockstar London" [image="rockstar_london.png"]
+            "Rockstar New England" [image="rockstar_new_england.png"]
+            "Rockstar North" [image="rockstar_north.png"]
+            "Rockstar San Diego" [image="rockstar_san_diego.png"]
+            "Rockstar Toronto" [image="rockstar_toronto.png"]
+        }
+
+        "Zynga" -> {
+            "Nordeus" [image="nordeus.png"]
+            "Playdots" [image="playdots.png"]
+            "Socialpoint" [image="socialpoint.png"]
+            "StarLark" [image="starlark.png"]
+            "Chartboost" [image="chartboost.png"]
+            "Echtra Games" [image="echtra.png"]
+            "Rollic" [image="rollic.png"]
+            "Peak Games" [image="peak_games.png"]
+            "Small Giant Games" [image="small_giant.png"]
+            "Gram Games" [image="gram_games.png"]
+            "NaturalMotion" [image="naturalmotion.png"]
+            "Zynga with Friends" [image="zynga_with_friends.png"]
+        }
+
+        "NaturalMotion" -> {
+            "BossAlien" [image="bossalien.png"]
+        }
+    }
+
+    subgraph cluster_bandai {
+        "Bandai Namco Entertainment" [image="bandai_namco_entertainment.png"]
+
+        "Bandai Namco Entertainment" -> {
+            "Bandai Namco Studios" [image="bandai_namco_studios.png"]
+            "Bandai Namco Online" [image="bandai_namco_online.png"]
+            "Bandai Namco Nexus" [image="bandai_namco_nexus.png"]
+            "Bandai Namco Mobile" [image="bandai_namco_mobile.png"]
+            "Bandai Namco Shanghai" [image="bandai_namco_shanghai.png"]
+            "B.B. Studio" [image="bb_studio.png"]
+            "D3 Publisher" [image="d3_publisher.png"]
+            "Reflector Entertainment" [image="reflector_entertainment.png"]
+        }
+
+        "D3 Publisher" -> {
+            "D3 Go" [image="d3_go.png"]
+        }
+    }
+
+    subgraph cluster_square {
+        "Square Enix" [image="square.png"]
+
+        "Square Enix" -> {
+            "Hippos Lab" [image="hippos_lab.png"]
+            "Tokyo RPG Factory" [image="tokyo_rpg_factory.png"]
+            "Luminous Productions" [image="luminous_productions.png"]
+            "Square Enix Europe" [image="square_enix_europe.png"]
+            "Square Enix London Mobile" [image="square_enix_london_mobile.png"]
+        }
+
+        "Square Enix Europe" -> {
+            "Crystal Dynamics" [image="crystal_dynamics.png"]
+            "Eidos Montreal" [image="eidos_montreal.png"]
+            "Eidos Sherbrooke" [image="eidos_sherbrooke.png"]
+            "Eidos Shanghai" [image="eidos_shanghai.png"]
+            "Square Enix Montreal" [image="square_enix_montreal.png"]
+        }
+
+        "Crystal Dynamics" -> {
+            "Crystal Northwest" [image="crystal_northwest.png"]
+            "Crystal Southwest" [image="crystal_southwest.png"]
+        }
+    }
+
+    subgraph cluster_ubisoft {
+        "Ubisoft" [image="ubisoft.png"]
+
+        "Ubisoft" -> {
+            "1492 Studio" [image="1492_studio.png"]
+            "Blue Mammoth Games" [image="blue_mammoth_games.png"]
+            "Future Games of London" [image="future_games_of_london.png"]
+            "Green Panda Games" [image="green_panda_games.png"]
+            "Hybride Technologies" [image="hybride_technologies.png"]
+            "Ivory Tower" [image="ivory_tower.png"]
+            "Ketchapp" [image="ketchapp.png"]
+            "Kolibri Games" [image="kolibri_games.png"]
+            "Massive Entertainment" [image="massive_entertainment.png"]
+            "Nadeo" [image="ubisoft_nadeo.png"]
+            "Owlient" [image="ubisoft_owlient.png"]
+            "Quazal" [image="quazal.png"]
+            "Red Storm Entertainment" [image="red_storm_entertainment.png"]
+            "RedLynx" [image="redlynx.png"]
+            "Ubisoft Abu Dhabi" [image="ubisoft_abu_dhabi.png"]
+            "Ubisoft Annecy" [image="ubisoft_annecy.png"]
+            "Ubisoft Barcelona" [image="ubisoft_barcelona.png"]
+            "Ubisoft Barcelona Mobile" [image="ubisoft_barcelona_mobile.png"]
+            "Ubisoft Belgrade" [image="ubisoft_belgrade.png"]
+            "Ubisoft Berlin" [image="ubisoft_berlin.png"]
+            "Ubisoft Bordeaux" [image="ubisoft_bordeaux.png"]
+            "Ubisoft Bucharest" [image="ubisoft_bucharest.png"]
+            "Ubisoft Chengdu" [image="ubisoft_chengdu.png"]
+            "Ubisoft Dusseldorf" [image="ubisoft_dusseldorf.png"]
+            "Ubisoft Da Nang" [image="ubisoft_da_nang.png"]
+            "Ubisoft Halifax" [image="ubisoft_halifax.png"]
+            "Ubisoft Kyiv" [image="ubisoft_kyiv.png"]
+            "Ubisoft Leamington" [image="ubisoft_leamington.png"]
+            "Ubisoft Blue Byte" [image="ubisoft_blue_byte.png"]
+            "Ubisoft Milan" [image="ubisoft_milan.png"]
+            "Ubisoft Montpellier" [image="ubisoft_montpellier.png"]
+            "Ubisoft Montreal" [image="ubisoft_montreal.png"]
+            "Ubisoft Mumbai" [image="ubisoft_mumbai.png"]
+            "Ubisoft Odesa" [image="ubisoft_odesa.png"]
+            "Ubisoft Osaka" [image="ubisoft_osaka.png"]
+            "Ubisoft Paris" [image="ubisoft_paris.png"]
+            "Ubisoft Paris Mobile" [image="ubisoft_paris_mobile.png"]
+            "Ubisoft Philippines" [image="ubisoft_philippines.png"]
+            "Ubisoft Pune" [image="ubisoft_pune.png"]
+            "Ubisoft Quebec" [image="ubisoft_quebec.png"]
+            "Ubisoft Reflections" [image="ubisoft_reflections.png"]
+            "Ubisoft Saguenay" [image="ubisoft_saguenay.png"]
+            "Ubisoft San Francisco" [image="ubisoft_san_francisco.png"]
+            "Ubisoft Shanghai" [image="ubisoft_shanghai.png"]
+            "Ubisoft Singapore" [image="ubisoft_singapore.png"]
+            "Ubisoft Sofia" [image="ubisoft_sofia.png"]
+            "Ubisoft Stockholm" [image="ubisoft_stockholm.png"]
+            "Ubisoft Toronto" [image="ubisoft_toronto.png"]
+            "Ubisoft Winnipeg" [image="ubisoft_winnipeg.png"]
+        }
+    }
+
+    subgraph cluster_sega {
+        "Sega" [image="sega.png"]
+
+        "Sega" -> {
+            "SEGA Sapporo Studio" [image="sega_sapporo_studio.png"]
+            "Sonic Team" [image="sonic_team.png"]
+            "Ryu Ga Gotoku Studio" [image="ryu_ga_gotoku_studio.png"]
+            "Amplitude Studios" [image="amplitude_studios.png"]
+            "Atlus" [image="atlus.png"]
+            "Creative Assembly" [image="creative_assembly.png"]
+            "Hardlight" [image="hardlight.png"]
+            "Ignited Artists" [image="ignited_artists.png"]
+            "Play Heart" [image="play_heart.png"]
+            "Relic Entertainment" [image="relic_entertainment.png"]
+            "Sports Interactive" [image="sports_interactive.png"]
+            "Two Point Studios" [image="two_point_studios.png"]
+        }
+
+        "Creative Assembly" -> {
+            "Creative Assembly Sofia" [image="creative_assembly_sofia.png"]
+        }
+
+        "Atlus" -> {
+            //"Team Maniax" logo?
+            "P-Studio" [image="p_studio.png"]
+            "Studio Zero" [image="studio_zero.png"]
+        }
+    }
+
+    subgraph cluster_epic {
+        "Epic Games" [image="epic_games.png"]
+
+        "Epic Games" -> {
+            "Chair Entertainment" [image="chair_entertainment.png"]
+            "Cloudgine" [image="cloudgine.png"]
+            "Harmonix" [image="harmonix.png"]
+            "Kamu" [image="kamu.png"]
+            "Psyonix" [image="psyonix.png"]
+            "RAD Game Tools" [image="rad_game_tools.png"]
+            "Tonic Games Group" [image="tonic_games_group.png"]
+        }
+
+        "Tonic Games Group" -> {
+            "Mediatonic" [image="mediatonic.png"]
+            "Irregular Corporation" [image="irregular_corporation.png"]
+            "Fortitude Games" [image="fortitude_games.png"]
+        }
+    }
+
+    subgraph cluster_embracer {
+        "Embracer Group" [image="embracer.png"]
+
+        "Embracer Group" -> {
+            "Amplifier Game Invest" [image="amplifier_game_invest.png"]
+            "Dark Horse Games" [image="dark_horse_games.png"]
+            "DECA Games" [image="deca_games.png"]
+            "Easybrain" [image="easybrain.png"]
+            "Gearbox Software" [image="gearbox_software.png"]
+            "Koch Media" [image="koch_media.png"]
+            "Saber Interactive" [image="saber_interactive.png"]
+            "THQ Nordic" [image="thq_nordic.png"]
+            "Quantic Lab" [image="quantic_lab.png"]
+        }
+
+        "Amplifier Game Invest" -> {
+            "A Creative Endeavor" [image="a_creative_endeavor.png"]
+            "Green Tile Digital" [image="green_tile_digital.png"]
+            "Goose Byte" [image="goose_byte.png"]
+            "Zapper Games" [image="zapper_games.png"]
+            "Frame Break" [image="frame_break.png"]
+            "Plucky Bytes" [image="plucky_bytes.png"]
+            "Silent Games" [image="silent_games.png"]
+            "Rare Earth" [image="rare_earth.png"]
+            "Vermila" [image="vermila.png"]
+            "Destinybit" [image="destinybit.png"]
+            "C77 Entertainment" [image="c77_entertainment.png"]
+            "River End Games" [image="river_end_games.png"]
+            "Tarsier Studios" [image="tarsier_studios.png"]
+            "Palindrome Interactive" [image="palindrome_interactive.png"]
+            "Kavalri Games" [image="kavalri_games.png"]
+            "Neon Giant" [image="neon_giant.png"]
+            "Framebunker" [image="framebunker.png"]
+            "Misc Games" [image="misc_games.png"]
+        }
+
+        "Gearbox Software" -> {
+            "Gearbox Studio Quebec" [image="gearbox_studio_quebec.png"]
+            "Gearbox Studio Montreal" [image="gearbox_studio_montreal.png"]
+            "Perfect World Entertainment" [image="perfect_world_entertainment.png"]
+            "Cryptic Studios" [image="cryptic_studios.png"]
+        }
+
+        "Koch Media" -> {
+            "Deep Silver" [image="deep_silver.png"]
+            "DigixArt" [image="digixart.png"]
+            "Flying Wild Hog" [image="flying_wild_hog.png"]
+            "Free Radical Design" [image="free_radical_design.png"]
+            "Milestone" [image="milestone.png"]
+            "Prime Matter" [image="prime_matter.png"]
+            "Warhorse Studio" [image="warhorse.png"]
+            "Vertigo Games" [image="vertigo_games.png"]
+            "Voxler" [image="voxler.png"]
+            "Ravenscourt" [image="ravenscourt.png"]
+        }
+
+        "Deep Silver" -> {
+            "Volition" [image="volition.png"]
+            "Fishlabs" [image="fishlabs.png"]
+            "Dambuster Studios" [image="dambuster_studios.png"]
+        }
+
+        "Vertigo Games" -> {
+            "Force Field" [image="force_field.png"]
+        }
+
+        "Saber Interactive" -> {
+            "34BigThings" [image="34_big_things.png"]
+            "3D Realms" [image="3d_realms.png"]
+            "4A Games" [image="4a_games.png"]
+            "Aspyr" [image="aspyr.png"]
+            "Bytex" [image="bytex.png"]
+            "Demiurge Studios" [image="demiurge_studios.png"]
+            "Digic Pictures" [image="digic_pictures.png"]
+            "Fractured Byte" [image="fractured_byte.png"]
+            "Mad Head Games" [image="mad_head_games.png"]
+            "New World Interactive" [image="new_world_interactive.png"]
+            "Nimble Giant Entertainment" [image="nimble_giant.png"]
+            "Shiver Entertainment" [image="shiver_entertainment.png"]
+            "Slipgate Ironworks" [image="slipgate_ironworks.png"]
+            "SmartPhone Labs" [image="smartphone_labs.png"]
+            "Snapshot Games" [image="snapshot_games.png"]
+            "Zen Studios" [image="zen_studios.png"]
+        }
+
+        "THQ Nordic" -> {
+            "Alkimia Interactive" [image="alkimia_interactive.png"]
+            "Appeal Studios" [image="appeal_studios.png"]
+            "Ashborne Games" [image="ashbourne_games.png"]
+            "Black Forest Games" [image="black_forest_games.png"]
+            "Bugbear Entertainment" [image="bugbear_entertainment.png"]
+            "Experiment 101" [image="experiment_101.png"]
+            "Gate 21" [image="gate_21.png"]
+            "Grimlore Games" [image="grimlore_games.png"]
+            "Gunfire Games" [image="gunfire_games.png"]
+            "HandyGames" [image="handygames.png"]
+            "Kaiko" [image="kaiko.png"]
+            "Massive Miniteam" [image="massive_miniteam.png"]
+            "Mirage Game Studios" [image="mirage_game_studios.png"]
+            "Nine Rocks Games" [image="nine_rocks_games.png"]
+            "Pieces Interactive" [image="pieces_interactive.png"]
+            "Piranha Bytes" [image="piranha_bytes.png"]
+            "Pow Wow Entertainment" [image="powwow.png"]
+            "Purple Lamp Studios" [image="purple_lamp_studios.png"]
+            "Rainbow Studios" [image="rainbow.png"]
+            //"THQ Nordic France" logo?
+            "Coffee Stain Holding" [image="coffee_stain.png"]
+        }
+
+        "DECA Games" -> {
+            "A Thinking Ape" [image="a_thinking_ape.png"]
+            "Crazy Labs" [image="crazylabs.png"]
+            "IUGO Mobile Entertainment" [image="iugo_mobile_entertainment.png"]
+            "Firescore"  [image="firescore.png"]
+            //"Jufeng Studio" logo?
+        }
+
+        "Coffee Stain Holding" -> {
+            "Box Dragon" [image="box_dragon.png"]
+            "Coffee Stain North" [image="coffee_stain_north.png"]
+            "Ghost Ship Games" [image="ghost_ship_games.png"]
+            "Lavapotion" [image="lavapotion.png"]
+            "Easy Trigger Games" [image="easy_trigger_games.png"]
+        }
+    }
+}
