@@ -1,0 +1,81 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph embracer {
+        "Embracer Group" [image="embracer.png", label=""]
+
+        "Embracer Group" -> {
+            "Amplifier Game Invest"
+            "Asmodee"
+            "Coffee Stain Holding"
+            "Dark Horse Media"
+            "DECA Games"
+            "Easybrain"
+            "Gearbox Entertainment"
+            "Koch Media"
+            "Saber Interactive"
+            "THQ Nordic"
+        }
+        "Gearbox Entertainment" -> {
+            "Gearbox Software"
+            "Perfect World Entertainment"
+            "Cryptic Studios"
+        }
+        "Koch Media" -> {
+            "Deep Silver"
+            "DigixArt"
+            "Flying Wild Hog"
+            "Milestone"
+            "Prime Matter"
+            "Vertigo Games"
+            "Ravenscourt"
+        }
+        "Saber Interactive" -> {
+            "34BigThings"
+            "3D Realms"
+            "4A Games"
+            "Aspyr"
+            "Bytex"
+            "Demiurge Studios"
+            "Digic Pictures"
+            "Fractured Byte"
+            "Mad Head Games"
+            "New World Interactive"
+            "Nimble Giant Entertainment"
+            "Shiver Entertainment"
+            "Slipgate Ironworks"
+            "SmartPhone Labs"
+            "Snapshot Games"
+            "Zen Studios"
+        }
+        "THQ Nordic" -> {
+            "Alkimia Interactive"
+            "Appeal Studios"
+            "Ashborne Games"
+            "Black Forest Games"
+            "Bugbear Entertainment"
+            "Experiment 101"
+            "Gate 21"
+            "Grimlore Games"
+            "Gunfire Games"
+            "HandyGames"
+            "Kaiko"
+            "Mirage Game Studios"
+            "Nine Rocks Games"
+            "Pieces Interactive"
+            "Piranha Bytes"
+            "Pow Wow Entertainment"
+            "Purple Lamp Studios"
+            "Rainbow Studios"
+            "THQ Nordic France"
+        }
+    }
+}

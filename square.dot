@@ -1,0 +1,36 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph square {
+        "Square Enix" [image="square.png", label=""]
+
+        "Square Enix" -> {
+            "Hippos Lab" [image="hippos_lab.png", label=""]
+            "Tokyo RPG Factory" [image="tokyo_rpg_factory.png", label=""]
+            "Luminous Productions" [image="luminous_productions.png", label=""]
+            "Square Enix Europe" [image="square_enix_europe.png", label=""]
+            "Square Enix London Mobile" [image="square_enix_london_mobile.png", label=""]
+        }
+
+        "Square Enix Europe" -> {
+            "Crystal Dynamics" [image="crystal_dynamics.png", label=""]
+            "Eidos Montreal" [image="eidos_montreal.png", label=""]
+            "Eidos Sherbrooke" [image="eidos_sherbrooke.png", label=""]
+            "Eidos Shanghai" [image="eidos_shanghai.png", label=""]
+            "Square Enix Montreal" [image="square_enix_montreal.png", label=""]
+        }
+
+        "Crystal Dynamics" -> {
+            "Crystal Northwest" [image="crystal_northwest.png", label=""]
+            "Crystal Southwest" [image="crystal_southwest.png", label=""]
+        }
+    }
+}

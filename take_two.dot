@@ -1,0 +1,77 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph take_two {
+        "Take-Two Interactive" [image="take_two_interactive.png", label=""]
+
+        "Take-Two Interactive" -> {
+            "2K" [image="2k.png", label=""]
+            "Dynamixyz" [image="dynamixyz.png", label=""]
+            "Ghost Story Games" [image="ghost_story.png", label=""]
+            "Private Division" [image="private_division.png", label=""]
+            "Rockstar Games" [image="rockstar_games.png", label=""]
+            "Zynga" [image="zynga.png", label=""]
+        }
+
+        "2K" -> {
+            "2K Chengdu" [image="2k_chengdu.png", label=""]
+            "2K Madrid" [image="2k_madrid.png", label=""]
+            "2K Vegas" [image="2k_vegas.png", label=""]
+            "31st Union" [image="31st_union.png", label=""]
+            "Cat Daddy Games" [image="cat_daddy_games.png", label=""]
+            "Cloud Chamber" [image="cloud_chamber.png", label=""]
+            "Firaxis Games" [image="firaxis_games.png", label=""]
+            "Hangar 13" [image="hangar_13.png", label=""]
+            "HB Studios" [image="hb_studios.png", label=""]
+            "Visual Concepts" [image="visual_concepts.png", label=""]
+        }
+
+        "Private Division" -> {
+            "Intercept Games" [image="intercept_games.png", label=""]
+            "Roll7" [image="roll7.png", label=""]
+        }
+
+        "Rockstar Games" -> {
+            "Rockstar Dundee" [image="rockstar_dundee.png", label=""]
+            "Rockstar India" [image="rockstar_india.png", label=""]
+            "Rockstar Leeds" [image="rockstar_leeds.png", label=""]
+            "Rockstar Lincoln" [image="rockstar_lincoln.png", label=""]
+            "Rockstar London" [image="rockstar_london.png", label=""]
+            "Rockstar New England" [image="rockstar_new_england.png", label=""]
+            "Rockstar North" [image="rockstar_north.png", label=""]
+            "Rockstar San Diego" [image="rockstar_san_diego.png", label=""]
+            "Rockstar Toronto" [image="rockstar_toronto.png", label=""]
+        }
+
+        "Zynga" -> {
+            "T2 Mobile Games"
+            "StarLark" [image="starlark.png", label=""]
+            "Chartboost" [image="chartboost.png", label=""]
+            "Echtra Games" [image="echtra.png", label=""]
+            "Rollic" [image="rollic.png", label=""]
+            "Peak Games" [image="peak_games.png", label=""]
+            "Small Giant Games" [image="small_giant.png", label=""]
+            "Gram Games" [image="gram_games.png", label=""]
+            "NaturalMotion" [image="naturalmotion.png", label=""]
+            "Zynga with Friends" [image="zynga_with_friends.png", label=""]
+        }
+
+        "T2 Mobile Games" -> {
+            "Nordeus" [image="nordeus.png", label=""]
+            "Playdots" [image="playdots.png", label=""]
+            "Socialpoint" [image="socialpoint.png", label=""]
+        }
+
+        "NaturalMotion" -> {
+            "BossAlien" [image="bossalien.png", label=""]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph sega {
+        "Sega" [image="sega.png", label=""]
+
+        "Sega" -> {
+            "Amplitude Studios"
+            "Atlus"
+            "Creative Assembly"
+            "Hardlight"
+            "Ignited Artists"
+            "Play Heart"
+            "Relic Entertainment"
+            "Sports Interactive"
+            "Two Point Studios"
+            "TMS Entertainment"
+        }
+    }
+}

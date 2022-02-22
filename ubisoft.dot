@@ -1,0 +1,66 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=neato
+    overlap=scale
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph ubisoft {
+        "Ubisoft" [image="ubisoft.png", label=""]
+
+        "Ubisoft" -> {
+            "1492 Studio" [image="1492_studio.png", label=""]
+            "Blue Mammoth Games" [image="blue_mammoth_games.png", label=""]
+            "Future Games of London" [image="future_games_of_london.png", label=""]
+            "Green Panda Games" [image="green_panda_games.png", label=""]
+            "Hybride Technologies" [image="hybride_technologies.png", label=""]
+            "Ivory Tower" [image="ivory_tower.png", label=""]
+            "Ketchapp" [image="ketchapp.png", label=""]
+            "Kolibri Games" [image="kolibri_games.png", label=""]
+            "Massive Entertainment" [image="massive_entertainment.png", label=""]
+            "Nadeo" [image="ubisoft_nadeo.png", label=""]
+            "Owlient" [image="ubisoft_owlient.png", label=""]
+            "Quazal" [image="quazal.png", label=""]
+            "Red Storm Entertainment" [image="red_storm_entertainment.png", label=""]
+            "RedLynx" [image="redlynx.png", label=""]
+            "Ubisoft Abu Dhabi" [image="ubisoft_abu_dhabi.png", label=""]
+            "Ubisoft Annecy" [image="ubisoft_annecy.png", label=""]
+            "Ubisoft Barcelona" [image="ubisoft_barcelona.png", label=""]
+            "Ubisoft Barcelona Mobile" [image="ubisoft_barcelona_mobile.png", label=""]
+            "Ubisoft Belgrade" [image="ubisoft_belgrade.png", label=""]
+            "Ubisoft Berlin" [image="ubisoft_berlin.png", label=""]
+            "Ubisoft Bordeaux" [image="ubisoft_bordeaux.png", label=""]
+            "Ubisoft Bucharest" [image="ubisoft_bucharest.png", label=""]
+            "Ubisoft Chengdu" [image="ubisoft_chengdu.png", label=""]
+            "Ubisoft Dusseldorf" [image="ubisoft_dusseldorf.png", label=""]
+            "Ubisoft Da Nang" [image="ubisoft_da_nang.png", label=""]
+            "Ubisoft Halifax" [image="ubisoft_halifax.png", label=""]
+            "Ubisoft Kyiv" [image="ubisoft_kyiv.png", label=""]
+            "Ubisoft Leamington" [image="ubisoft_leamington.png", label=""]
+            "Ubisoft Blue Byte" [image="ubisoft_blue_byte.png", label=""]
+            "Ubisoft Milan" [image="ubisoft_milan.png", label=""]
+            "Ubisoft Montpellier" [image="ubisoft_montpellier.png", label=""]
+            "Ubisoft Montreal" [image="ubisoft_montreal.png", label=""]
+            "Ubisoft Mumbai" [image="ubisoft_mumbai.png", label=""]
+            "Ubisoft Odesa" [image="ubisoft_odesa.png", label=""]
+            "Ubisoft Osaka" [image="ubisoft_osaka.png", label=""]
+            "Ubisoft Paris" [image="ubisoft_paris.png", label=""]
+            "Ubisoft Paris Mobile" [image="ubisoft_paris_mobile.png", label=""]
+            "Ubisoft Philippines" [image="ubisoft_philippines.png", label=""]
+            "Ubisoft Pune" [image="ubisoft_pune.png", label=""]
+            "Ubisoft Quebec" [image="ubisoft_quebec.png", label=""]
+            "Ubisoft Reflections" [image="ubisoft_reflections.png", label=""]
+            "Ubisoft Saguenay" [image="ubisoft_saguenay.png", label=""]
+            "Ubisoft San Francisco" [image="ubisoft_san_francisco.png", label=""]
+            "Ubisoft Shanghai" [image="ubisoft_shanghai.png", label=""]
+            "Ubisoft Singapore" [image="ubisoft_singapore.png", label=""]
+            "Ubisoft Sofia" [image="ubisoft_sofia.png", label=""]
+            "Ubisoft Stockholm" [image="ubisoft_stockholm.png", label=""]
+            "Ubisoft Toronto" [image="ubisoft_toronto.png", label=""]
+            "Ubisoft Winnipeg" [image="ubisoft_winnipeg.png", label=""]
+        }
+    }
+}

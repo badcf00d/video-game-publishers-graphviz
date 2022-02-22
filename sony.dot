@@ -1,0 +1,57 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=true
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+    ranksep="5.0 equally"
+    //nodesep=5.0;
+    //K=4
+    //sep = .5
+    //nodesep = 0
+    //compound=true
+    //rankdir=LR
+    //mode=KK
+    //mode=ipsep
+    //model=subset
+    //epsilon=0.1
+    //ratio=fill
+
+    subgraph sony {
+        "Sony Interactive Entertainment" [image="sony_interactive_entertainment.png", label=""]
+
+        "Sony Interactive Entertainment" -> {
+            "Playstation Studios" [image="playstation_studios.png", label=""]
+            "Polyphony Digital" [image="polyphony_digital.png", label=""]
+            "Insomniac Games" [image="insomniac_games.png", label=""]
+            "Naughty Dog" [image="naughty_dog.png", label=""]
+            "Bend Studio" [image="bend_studio.png", label=""]
+            "Sucker Punch Productions" [image="sucker_punch.png", label=""]
+            "Pixelopus" [image="pixelopus.png", label=""]
+            "Bluepoint Games" [image="bluepoint_games.png", label=""]
+            "Valkyrie Entertainment" [image="valkyrie_entertainment.png", label=""]
+            "Guerrilla Games" [image="guerrilla_games.png", label=""]
+            "Media Molecule" [image="media_molecule.png", label=""]
+            "Housemarque" [image="housemarque.png", label=""]
+            "Firesprite" [image="firesprite.png", label=""]
+            "Nixxes Software" [image="nixxes.png", label=""]
+            "XDev" [image="xdev.png", label=""]
+            "Bungie" [image="bungie.png", label=""]
+        }
+
+        "Playstation Studios" -> {
+            "Team Asobi" [image="team_asobi.png", label=""]
+            "San Diego Studio" [image="san_diego_studio.png", label=""]
+            "Santa Monica Studio" [image="santa_monica_studio.png", label=""]
+            "London Studio" [image="london_studio.png", label=""]
+        }
+
+        "Firesprite" -> {
+            "Fabrik Games" [image="fabrik_games.png", label=""]
+        }
+    }
+}

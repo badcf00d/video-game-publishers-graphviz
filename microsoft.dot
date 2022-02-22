@@ -1,0 +1,74 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph microsoft {
+        "Microsoft" [image="microsoft.png", label=""]
+        "Activision-Blizzard" [image="actiblizz.png", label=""]
+
+        "Microsoft" -> {
+            "Xbox Game Studios" [image="xbox_game_studios.png", label=""]
+            "Zenimax Media" [image="zenimax_media.png", label=""]
+        }
+        "Microsoft" -> "Activision-Blizzard" [label="Pending Approval", style=dotted]
+
+        "Xbox Game Studios" -> {
+            "343 Industries" [image="343_industries.png", label=""]
+            "The Coalition" [image="the_coalition.png", label=""]
+            "Compulsion Games" [image="compulsion_games.png", label=""]
+            "Double Fine Productions" [image="double_fine.png", label=""]
+            "The Initiative" [image="the_initiative.png", label=""]
+            "inXile Entertainment" [image="inxile_entertainment.png", label=""]
+            "Mojang Studios" [image="mojang_studios.png", label=""]
+            "Ninja Theory" [image="ninja_theory.png", label=""]
+            "Obsidian Entertainment" [image="obsidian_entertainment.png", label=""]
+            "Playground Games" [image="playground_games.png", label=""]
+            "Rare" [image="rare.png", label=""]
+            "Turn 10 Studios" [image="turn_10_studios.png", label=""]
+            "Undead Labs" [image="undead_labs.png", label=""]
+            "World's Edge" [image="worlds_edge.png", label=""]
+        }
+
+        "Zenimax Media" -> {
+            "Alpha Dog Games" [image="alpha_dog_games.png", label=""]
+            "Arkane Studios" [image="arkane_studios.png", label=""]
+            "Bethesda Game Studios" [image="bethesda_game_studios.png", label=""]
+            "id Software" [image="id_software.png", label=""]
+            "MachineGames" [image="machine_games.png", label=""]
+            "Roundhouse Studios" [image="roundhouse_studios.png", label=""]
+            "Tango Gameworks" [image="tango_gameworks.png", label=""]
+            "ZeniMax Online Studios" [image="zenimax_online.png", label=""]
+        }
+
+        "Arkane Studios" -> {
+            "Arkane Austin" [image="arkane_austin.png", label=""]
+        }
+
+        "Activision-Blizzard" -> {
+            "Activision Publishing" [image="activision.png", label=""]
+            "Blizzard Entertainment" [image="blizzard_entertainment.png", label=""]
+            "King.com" [image="king.png", label=""]
+        }
+
+        "Activision Publishing" -> {
+            "Beenox" [image="beenox.png", label=""]
+            "Demonware" [image="demonware.png", label=""]
+            "Digital Legends Entertainment" [image="digital_legends.png", label=""]
+            "High Moon Studios" [image="high_moon_studios.png", label=""]
+            "Infinity Ward" [image="infinity_ward.png", label=""]
+            "Radical Entertainment" [image="radical_entertainment.png", label=""]
+            "Raven Software" [image="raven_software.png", label=""]
+            "Sledgehammer Games" [image="sledgehammer_games.png", label=""]
+            "Solid State Studios" [image="solid_state_studios.png", label=""]
+            "Toys for Bob" [image="toys_for_bob.png", label=""]
+            "Treyarch" [image="Treyarch.png", label=""]
+        }
+    }
+}

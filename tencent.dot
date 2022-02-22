@@ -1,0 +1,102 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph tencent {
+        "Tencent Games" [image="tencent_games.png", label=""]
+        "Grinding Gear Games" [image="grinding_gear.png", label=""]
+        "Space Ape Games" [image="space_ape.png", label=""]
+        "Supercell" [image="supercell.png", label=""]
+        "Certain Affinity" [image="certain_affinity.png", label=""]
+        "Epic Games" [image="epic_games.png", label=""]
+
+        "Tencent Games" -> {
+            "Funcom" [image="funcom.png", label=""]
+            "Leyou" [image="leyou.png", label=""]
+            "Riot Games" [image="riot_games.png", label=""]
+            "Sharkmob" [image="sharkmob.png", label=""]
+            "Turtle Rock Studios" [image="turtle_rock.png", label=""]
+            "Wake Up Interactive" [image="wakeup.png", label=""]
+            "Sumo Group" [image="sumo_group.png", label=""]
+            "Fatshark" [image="fatshark.png", label=""]
+            "Miniclip" [image="miniclip.png", label=""]
+            "Klei Entertainment" [image="klei.png", label=""]
+            "10 Chambers Collective" [image="10chambers.png", label=""]
+            "Yager Development" [image="yager.png", label=""]
+            "Aurora Studio Group" [image="aurora_studios.png", label=""]
+            "TiMi Studio Group" [image="timi_studios.png", label=""]
+            "Lightspeed & Quantum Studio Group" [image="lightspeed_and_quantum.png", label=""]
+            "Morefun Studio Group" [image="morefun_studio.png", label=""]
+            "NExT Studios" [image="next_studios.png", label=""]
+            "Stunlock Studios" [image="stunlock_studios.png", label=""]
+        }
+
+        "Epic Games" -> {
+            "Chair Entertainment" [image="chair_entertainment.png", label=""]
+            "Cloudgine" [image="cloudgine.png", label=""]
+            "Harmonix" [image="harmonix.png", label=""]
+            "Kamu" [image="kamu.png", label=""]
+            "Psyonix" [image="psyonix.png", label=""]
+            "RAD Game Tools" [image="rad_game_tools.png", label=""]
+            "Tonic Games Group" [image="tonic_games_group.png", label=""]
+        }
+
+        "Tonic Games Group" -> {
+            "Mediatonic" [image="mediatonic.png", label=""]
+            "Irregular Corporation" [image="irregular_corporation.png", label=""]
+            "Fortitude Games" [image="fortitude_games.png", label=""]
+        }
+
+        "Leyou" -> {
+            "Athlon Games" [image="athlon_games.png", label=""]
+            "Digital Extremes" [image="digital_extremes.png", label=""]
+            "Kingmaker" [image="kingmaker.png", label=""]
+            "Radiance Games" [image="radiance.png", label=""]
+            "Splash Damage" [image="splash_damage.png", label=""]
+        }
+
+
+        "Wake Up Interactive" -> {
+            "Soleil" [image="soleil.png", label=""]
+            "Valhalla Game Studios" [image="valhalla.png", label=""]
+        }
+
+        "Sumo Group" -> {
+            "Sumo Digital" [image="sumo_digital.png", label=""]
+            "Pipeworks Studios" [image="pipeworks.png", label=""]
+            "Atomhawk" [image="atomhawk.png", label=""]
+            "Secret Mode" [image="secret_mode.png", label=""]
+            "Auroch Digital" [image="auroch_digital.png", label=""]
+        }
+
+        "Sumo Digital" -> {
+            "Lab42" [image="lab42.png", label=""]
+            "PixelAnt Games" [image="pixelant.png", label=""]
+            "Red Kite Games" [image="red_kite.png", label=""]
+            "Sumo Pune" [image="sumo_pune.png", label=""]
+            "The Chinese Room" [image="chinese_room.png", label=""]
+        }
+
+        "Riot Games" -> {
+            "Radiant Entertainment" [image="radiant_entertainment.png", label=""]
+            "Hypixel Studios" [image="hypixel_studios.png", label=""]
+        }
+
+        "Pipeworks Studios" -> {
+            "Timbre Games" [image="timbre_games.png", label=""]
+        }
+
+        "Tencent Games" -> "Supercell" [label="84%", style=dotted]
+        "Tencent Games" -> "Grinding Gear Games" [label="80%", style=dotted]
+        "Tencent Games" -> "Epic Games" [label="40%", style=dotted]
+        "Supercell" -> "Space Ape Games" [label="62%", style=dotted]
+        "Leyou" -> "Certain Affinity" [label="20%", style=dotted]
+    }
+}

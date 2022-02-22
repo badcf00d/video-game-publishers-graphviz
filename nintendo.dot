@@ -1,0 +1,26 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=neato
+    overlap=scale
+    //overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph nintendo {
+        "Nintendo" [image="nintendo.png", label=""]
+
+        "Nintendo" -> {
+            "Nintendo Software Technology" [image="nintendo_software_technology.png", label=""]
+            "The Pokémon Company" [image="pokemon_company.png", label=""]
+            "Retro Studios" [image="retro_studios.png", label=""]
+            "Next Level Games" [image="next_level_games.png", label=""]
+            "NDcube" [image="nd_cube.png", label=""]
+            "1-UP Studio" [image="1up_studio.png", label=""]
+            "Monolith Soft" [image="monolith_soft.png", label=""]
+            "Mario Club Co., Ltd." [image="mario_club.png", label=""]
+        }
+    }
+}

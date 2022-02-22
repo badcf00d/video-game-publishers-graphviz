@@ -1,0 +1,65 @@
+digraph {
+    labeljust="r"
+    fontname="Fira Sans UltraLight"
+    imagepath="images"
+    layout=twopi
+    overlap=prism
+    overlap_scaling=-5
+    splines=polyline
+    graph [pad="0.5,0.5", bgcolor=lightgray, truecolor=true]
+    node [shape=none, bgcolor=transparent, imagescale=true]
+
+    subgraph ea {
+        "Electronic Arts" [image="ea.png", label=""]
+
+        "Electronic Arts" -> {
+            "BioWare" [image="bioware.png", label=""]
+            "Codemasters" [image="codemasters.png", label=""]
+            "Criterion Games" [image="criterion_games.png", label=""]
+            "DICE" [image="dice_stockholm.png", label=""]
+            "Frostbite Labs" [image="frostbite_labs.png", label=""]
+            "EA Mobile" [image="ea_mobile.png", label=""]
+            "EA Sports" [image="ea_sports.png", label=""]
+            "EA Chillingo" [image="ea_chillingo.png", label=""]
+            "EA Create" [image="ea_create.png", label=""]
+            "EA Galway" [image="ea_galway.png", label=""]
+            "EA Baton Rouge" [image="ea_baton_rouge.png", label=""]
+            "EA Gothenburg" [image="ea_gothenburg.png", label=""]
+            "EA Korea Studios" [image="ea_korea_studios.png", label=""]
+            "Full Circle" [image="fullcircle.png", label=""]
+            "Maxis" [image="maxis.png", label=""]
+            "Motive Studios" [image="motive_studios.png", label=""]
+            "Pogo Studios" [image="pogo_studios.png", label=""]
+            "PopCap Games" [image="popcap.png", label=""]
+            "Respawn Entertainment" [image="respawn_entertainment.png", label=""]
+            "Ripple Effect Studio" [image="ripple_effect_studios.png", label=""]
+        }
+
+        "Codemasters" -> {
+            "Slightly Mad Studios"  [image="slightly_mad.png", label=""]
+        }
+
+        "EA Mobile" -> {
+            "EA Capital Games" [image="ea_capital_games.png", label=""]
+            "EA Redwood Studios" [image="ea_redwood_studios.png", label=""]
+            "Firemonkeys Studios" [image="firemonkeys_studio.png", label=""]
+            "Glu Mobile" [image="glu_mobile.png", label=""]
+            "Industrial Toys" [image="industrial_toys.png", label=""]
+            "Playdemic" [image="playdemic.png", label=""]
+            "Red Crow Studios" [image="red_crow_studios.png", label=""]
+            "Slingshot Games" [image="slingshot_games.png", label=""]
+            "Tracktwenty Studios" [image="track_twenty_studios.png", label=""]
+        }
+
+        "EA Sports" -> {
+            "EA Romania" [image="ea_romania.png", label=""]
+            "EA Tiburon" [image="ea_tiburon.png", label=""]
+            "EA Vancouver" [image="ea_vancouver.png", label=""]
+            "Metalhead Software" [image="metalhead_software.png", label=""]
+        }
+
+        "Glu Mobile" -> {
+            "PlayFirst" [image="playfirst.png", label=""]
+        }
+    }
+}
