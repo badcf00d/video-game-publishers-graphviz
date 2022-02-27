@@ -33,7 +33,7 @@ images/%.png: images/hires/%.png
 clean:
 	@rm -f $(PNG_MIN) $(GRAPH)
 
-checks:
+checks: $(DOT_FILE)
 	@diff -s -a -y --color=always --suppress-common-lines \
 		<(find ./images/hires/ -type f -printf "%f\n" -iname "*.png" | sort) --label "PNG files" \
-		<(grep -o -P "[\w\d]*.png" publishers.dot | sort) --label "Files mentioned in graph"
+		<(grep -o -P "[\w\d]*.png" $< | sort) --label "Files mentioned in graph"
