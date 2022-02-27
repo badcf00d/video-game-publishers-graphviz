@@ -1,5 +1,7 @@
 # The Video Game Publisher Graph
 
+![Graph!](https://github.com/badcf00d/video-game-publishers-graphviz/releases/latest/download/publishers.png)
+
 A graphviz chart of the corporate structures of top video game publishers.
 
 Generally a studio is shown if there is a widely available logo used to represent them, otherwise it is probably more accurate to consider them part of the parent company, rather than a seperate studio.
