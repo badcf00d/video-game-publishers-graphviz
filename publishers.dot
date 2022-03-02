@@ -1,5 +1,5 @@
 digraph {
-    /* Labels */
+    /* Text */
     label=<
     <FONT POINT-SIZE="64">The Video Game Publisher Graph</FONT><BR ALIGN="RIGHT"/>
     <FONT POINT-SIZE="26">Generated on {GENERATE_TEXT}</FONT><BR ALIGN="RIGHT"/>
@@ -24,8 +24,8 @@ digraph {
     bgcolor=lightgray
     imagepath="images"
     truecolor=true
-    labeljust="r"
-    node [shape=none, bgcolor=transparent, imagescale=true]
+    labeljust=r
+    node [shape=none, bgcolor=transparent, imagescale=true, fontname="Fira Sans Light"]
 
 
     subgraph cluster_sony {
@@ -214,7 +214,7 @@ digraph {
             "Radical Entertainment" [image="radical_entertainment.png"]
             "Raven Software" [image="raven_software.png"]
             "Sledgehammer Games" [image="sledgehammer_games.png"]
-            "Solid State Studios" [image="solid_state_studios.png"]
+            "Solid State Studios" [image="solid_state_studios.png", xlabel="Solid State Studios"]
             "Toys for Bob" [image="toys_for_bob.png"]
             "Treyarch" [image="treyarch.png"]
         }
@@ -305,15 +305,15 @@ digraph {
         }
 
         "Rockstar Games" -> {
-            "Rockstar Dundee" [image="rockstar_dundee.png"]
-            "Rockstar India" [image="rockstar_india.png"]
-            "Rockstar Leeds" [image="rockstar_leeds.png"]
-            "Rockstar Lincoln" [image="rockstar_lincoln.png"]
-            "Rockstar London" [image="rockstar_london.png"]
-            "Rockstar New England" [image="rockstar_new_england.png"]
-            "Rockstar North" [image="rockstar_north.png"]
-            "Rockstar San Diego" [image="rockstar_san_diego.png"]
-            "Rockstar Toronto" [image="rockstar_toronto.png"]
+            "Rockstar Dundee" [image="rockstar_dundee.png", xlabel="Rockstar Dundee"]
+            "Rockstar India" [image="rockstar_india.png", xlabel="Rockstar India"]
+            "Rockstar Leeds" [image="rockstar_leeds.png", xlabel="Rockstar Leeds"]
+            "Rockstar Lincoln" [image="rockstar_lincoln.png", xlabel="Rockstar Lincoln"]
+            "Rockstar London" [image="rockstar_london.png", xlabel="Rockstar London"]
+            "Rockstar New England" [image="rockstar_new_england.png", xlabel="Rockstar New England"]
+            "Rockstar North" [image="rockstar_north.png", xlabel="Rockstar North"]
+            "Rockstar San Diego" [image="rockstar_san_diego.png", xlabel="Rockstar San Diego"]
+            "Rockstar Toronto" [image="rockstar_toronto.png", xlabel="Rockstar Toronto"]
         }
 
         "Zynga" -> {
@@ -565,7 +565,7 @@ digraph {
             "Nimble Giant Entertainment" [image="nimble_giant.png"]
             "Shiver Entertainment" [image="shiver_entertainment.png"]
             "Slipgate Ironworks" [image="slipgate_ironworks.png"]
-            "SmartPhone Labs" [image="smartphone_labs.png"]
+            "SmartPhone Labs" [image="smartphone_labs.png" xlabel="SmartPhone Labs"]
             "Snapshot Games" [image="snapshot_games.png"]
             "Zen Studios" [image="zen_studios.png"]
         }

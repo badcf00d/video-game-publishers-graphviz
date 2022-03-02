@@ -19,6 +19,7 @@ jobs:
       run: |
         sudo apt-get install -y graphviz imagemagick optipng
         sudo wget -P /usr/local/share/fonts https://github.com/mozilla/Fira/raw/master/ttf/FiraSans-UltraLight.ttf
+        sudo wget -P /usr/local/share/fonts https://github.com/mozilla/Fira/raw/master/ttf/FiraSans-Light.ttf
         sudo fc-cache -fv
     - name: make checks
       run: make checks
