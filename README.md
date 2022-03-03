@@ -9,7 +9,7 @@ Generally a studio is shown if there is a widely available logo used to represen
 #### How To Use
  - Install dependencies `sudo apt install graphviz imagemagick optipng`
  - (Optional) Install the [Fira font](https://github.com/mozilla/Fira)
-   - `sudo wget -P /usr/local/share/fonts https://github.com/mozilla/Fira/raw/master/ttf/FiraSans-UltraLight.ttf`
+   - `sudo wget -P /usr/local/share/fonts https://github.com/mozilla/Fira/raw/master/ttf/FiraSans-{UltraLight,Light}.ttf`
    - `sudo fc-cache -fv`
  - Generate the graph `make`
 
