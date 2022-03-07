@@ -233,7 +233,7 @@ digraph {
             "EA Sports" [image="ea_sports.png"]
             "EA Chillingo" [image="ea_chillingo.png"]
             "EA Create" [image="ea_create.png"]
-            "EA Galway" [image="ea_galway.png"]
+            "EA Galway" [image="ea_galway.png" xlabel="EA Galway"]
             "EA Baton Rouge" [image="ea_baton_rouge.png"]
             "EA Gothenburg" [image="ea_gothenburg.png"]
             "EA Korea Studios" [image="ea_korea_studios.png"]
