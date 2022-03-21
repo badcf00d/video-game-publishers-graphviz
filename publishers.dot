@@ -51,6 +51,7 @@ digraph {
             "San Diego Studio" [image="san_diego_studio.png"]
             "Santa Monica Studio" [image="santa_monica_studio.png"]
             "London Studio" [image="london_studio.png"]
+            "Haven Studios" [image="haven_studios.png"]
         }
         "Playstation Studios" -> "Bungie" [label="Pending Approval", style=dotted]
 
@@ -87,6 +88,7 @@ digraph {
             "Stunlock Studios" [image="stunlock_studios.png"]
             "Inflexoin Games" [image="inflexion_games.png"]
             "1C Entertainment" [image="1c_entertainment.png"]
+            "Tequila Works" [image="tequila_works.png"]
         }
 
         "Leyou" -> {
