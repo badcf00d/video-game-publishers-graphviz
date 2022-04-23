@@ -15,8 +15,8 @@ digraph {
     overlap=prism
     overlap_scaling=-8
     esep="+6"
-    sep="+6.5"
-    pad=1
+    sep="+7"
+    pad=0.8
 
     /* Style options */
     fontname="Fira Sans UltraLight"
@@ -526,8 +526,9 @@ digraph {
         "Gearbox Software" -> {
             "Gearbox Studio Quebec" [image="gearbox_studio_quebec.png"]
             "Gearbox Studio Montreal" [image="gearbox_studio_montreal.png"]
-            "Perfect World Entertainment" [image="perfect_world_entertainment.png"]
+            "Gearbox Publishing" [image="gearbox_publishing.png"]
             "Cryptic Studios" [image="cryptic_studios.png"]
+            "Lost Boys Interactive" [image="lost_boys_interactive.png"]
         }
 
         "Koch Media" -> {
