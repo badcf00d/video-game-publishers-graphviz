@@ -11,11 +11,8 @@ digraph {
     /* Layout options */
     layout=twopi
     ratio=1.0
-    size=5000
     overlap=prism
-    overlap_scaling=-8
-    esep="+6"
-    sep="+7"
+    overlap_scaling=9.5
     pad=0.8
 
     /* Style options */
@@ -145,10 +142,10 @@ digraph {
 
     subgraph cluster_nintendo {
         "Nintendo" [image="nintendo.png"]
+        "The Pokémon Company" [image="pokemon_company.png"]
 
         "Nintendo" -> {
             "Nintendo Software Technology" [image="nintendo_software_technology.png"]
-            "The Pokémon Company" [image="pokemon_company.png"]
             "Retro Studios" [image="retro_studios.png"]
             "Next Level Games" [image="next_level_games.png"]
             "NDcube" [image="nd_cube.png"]
@@ -157,6 +154,8 @@ digraph {
             "Mario Club Co., Ltd." [image="mario_club.png"]
             "SRD Co. Ltd." [image="src_co.png"]
         }
+
+        "Nintendo" -> "The Pokémon Company" [label="32%", style=dotted]
     }
 
     subgraph cluster_microsoft {
@@ -367,19 +366,6 @@ digraph {
             "Square Enix Europe" [image="square_enix_europe.png"]
             "Square Enix London Mobile" [image="square_enix_london_mobile.png"]
         }
-
-        "Square Enix Europe" -> {
-            "Crystal Dynamics" [image="crystal_dynamics.png"]
-            "Eidos Montreal" [image="eidos_montreal.png"]
-            "Eidos Sherbrooke" [image="eidos_sherbrooke.png"]
-            "Eidos Shanghai" [image="eidos_shanghai.png"]
-            "Square Enix Montreal" [image="square_enix_montreal.png"]
-        }
-
-        "Crystal Dynamics" -> {
-            "Crystal Northwest" [image="crystal_northwest.png"]
-            "Crystal Southwest" [image="crystal_southwest.png"]
-        }
     }
 
     subgraph cluster_ubisoft {
@@ -500,6 +486,9 @@ digraph {
             "Saber Interactive" [image="saber_interactive.png"]
             "THQ Nordic" [image="thq_nordic.png"]
             "Quantic Lab" [image="quantic_lab.png"]
+            "Crystal Dynamics" [image="crystal_dynamics.png"]
+            "Eidos Montreal" [image="eidos_montreal.png"]
+            "Square Enix Montreal" [image="square_enix_montreal.png"]
         }
 
         "Amplifier Game Invest" -> {
@@ -611,6 +600,16 @@ digraph {
             "Ghost Ship Games" [image="ghost_ship_games.png"]
             "Lavapotion" [image="lavapotion.png"]
             "Easy Trigger Games" [image="easy_trigger_games.png"]
+        }
+
+        "Eidos Montreal" -> {
+            "Eidos Sherbrooke" [image="eidos_sherbrooke.png"]
+            "Eidos Shanghai" [image="eidos_shanghai.png"]
+        }
+
+        "Crystal Dynamics" -> {
+            "Crystal Northwest" [image="crystal_northwest.png"]
+            "Crystal Southwest" [image="crystal_southwest.png"]
         }
     }
 }
